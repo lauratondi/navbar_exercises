@@ -1,0 +1,58 @@
+body {
+  margin: 0px;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(
+    120deg,
+    darkblue,
+    black 90%,
+    darkblue 90%,
+    white 90%
+  );
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#toggler {
+  display: none;
+}
+
+#toggler:checked ~ .menu {
+  left: 0%;
+}
+
+#toggler:checked ~ .togglerLabel {
+  transform: rotateZ(90deg);
+}
+.togglerLabel {
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  transition: 1s;
+}
+
+.menu {
+  position: fixed;
+  top: 60px;
+  left: -100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 30%;
+  min-width: 250px;
+  z-index: 999;
+  border-right: 2px solid black;
+  padding-left: 20px;
+  padding-top: 20px;
+  transition: 1s;
+}
+
+.menu p {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
