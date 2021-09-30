@@ -1,0 +1,50 @@
+body {
+  margin: 0px;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 999;
+  border-top: 1px solid darkgray;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voice {
+  width: 60px;
+  height: 60px;
+  margin: 0px 10px;
+
+  text-align: center;
+}
+
+a.box {
+  text-decoration: none;
+  color: darkblue;
+  border-radius: 50px;
+  margin: 0px auto;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+p.label {
+  position: relative;
+  top: -12px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+a.box:hover {
+  background-color: darkblue;
+  color: white;
+}
